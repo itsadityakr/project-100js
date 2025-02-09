@@ -1,4 +1,4 @@
-# **JavaScript Syntax Validator**  
+# **Project: JavaScript Syntax Validator**  
 
 ## **1. `const` (Constant Variables)**  
 `const` is used to declare variables whose values cannot be reassigned. This makes the code more secure and predictable.  
