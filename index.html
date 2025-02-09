@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 Buttons Grid</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Project 100 JSX</title>
     <style>
         body {
             display: flex;
@@ -15,7 +14,7 @@
             margin: 0;
             background-image: linear-gradient(to bottom, #000000, #4d2525, #924c2d, #c5851f, #d8cd00);
             font-family: 'Arial', sans-serif;
-            padding: -px;
+            padding: 0;
             overflow-y: auto;
             position: relative;
         }
@@ -41,7 +40,7 @@
             border: 3px solid #ccc;
             border-radius: 15px;
             background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(5px);
             animation: slideIn 1s ease-in-out;
         }
@@ -75,8 +74,8 @@
         }
 
         .button-52:hover:after {
-            top: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
         }
 
         @media (min-width: 768px) {
@@ -119,6 +118,9 @@
     </button>
     <button class="button-52" role="button" id="button-3"
             onclick="window.location.href='03-Temperature-Converter/index.html'">Temperature Converter
+    </button>
+    <button class="button-52" role="button" id="button-4"
+            onclick="window.location.href='04-Data-Type-Identifier/index.html'">Data Type Identifier
     </button>
 </div>
 </body>
