@@ -278,5 +278,3 @@ document.querySelector(".result").addEventListener("click", (e) => {
 **License:** MIT License
 
 ---
-
-This documentation provides a structured, beginner-friendly guide to your JavaScript calculator project. Let me know if you need any modifications!
