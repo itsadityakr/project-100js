@@ -1,0 +1,91 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?bank,money') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.mainContainer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 475px;
+    text-align: center;
+}
+
+/* Bank Header */
+.bank-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.bank-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.bank-header h2 {
+    font-size: 1.5em;
+    color: gold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Styled Inputs */
+input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid gold;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+    background-color: white;
+    border-color: green;
+}
+
+/* Calculate Button */
+#calculateBtn {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1em;
+    background: gold;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#calculateBtn:hover {
+    background: darkgoldenrod;
+}
+
+/* Output Message */
+.output {
+    margin-top: 15px;
+    font-size: 1.2em;
+}

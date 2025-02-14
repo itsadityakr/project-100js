@@ -1,0 +1,129 @@
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Styling */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a6f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glassmorphism Container */
+.mainContainer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Input Field Styling */
+.inputContainer {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 16px;
+    color: #ddd;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Output Styling */
+.outputContainer {
+    margin-top: 15px;
+}
+
+/* Result Messages */
+.result {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Success (Palindrome) */
+.success {
+    background: rgba(0, 255, 0, 0.2);
+    color: #00ff88;
+    border: 2px solid #00ff88;
+}
+
+/* Error (Not Palindrome) */
+.error {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff5555;
+    border: 2px solid #ff5555;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .mainContainer {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
