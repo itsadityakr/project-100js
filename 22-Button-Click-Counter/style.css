@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background: #a66e6e;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 36px;
+    color: #f0d0a4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Button Styling */
+button {
+    font-size: 24px;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #f0d0a4;
+    color: #3e2b1f;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #e0b781;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #c79e5a;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* Click Counter Styles */
+#counter {
+    font-size: 28px;
+    color: #f0d0a4;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Glowing Effect for Button */
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 15px rgba(240, 208, 164, 0.8);
+    }
+    100% {
+        box-shadow: 0px 0px 25px rgba(240, 208, 164, 1);
+    }
+}
+
+/* Add some animation to the button */
+button {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Border and Shadow Effects */
+.container:hover {
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.6);
+}
+
+.container:active {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #counter {
+        font-size: 24px;
+    }
+}
+
+/* Additional Styling */
+body, html {
+    height: 100%;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    z-index: -1;
+    filter: blur(10px);
+}

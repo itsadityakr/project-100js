@@ -1,0 +1,115 @@
+/* General body styling */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    border-radius: 8px;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2a2a2a; /* Dark gray for the header */
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Spacing to give a vintage feel */
+    font-weight: bold;
+}
+
+/* Styling for the input field */
+.inputDiv {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.5em;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px; /* Slight spacing to emulate typewriter look */
+}
+
+/* Styling for the output textarea */
+.outputDiv {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    resize: none;
+    white-space: pre-wrap; /* Preserve spaces and line breaks */
+    line-height: 1.5;
+}
+
+/* Add a typewriter effect to the textarea */
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Small tweaks for a more authentic typewriter look */
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/old-wallpaper.png');
+    background-repeat: repeat;
+}
+
+input[type="text"], textarea {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for small screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="text"] {
+        font-size: 1.2em;
+    }
+
+    textarea {
+        font-size: 1.1em;
+    }
+}
