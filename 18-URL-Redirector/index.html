@@ -17,18 +17,5 @@
     <button class="submit">Go</button>
 </div>
 <script src="./script.js"></script>
-<script>
-    const btnSubmit = document.querySelector(`.submit`);
-    btnSubmit.addEventListener(`click`, function (event) {
-        const url = document.getElementById(`url`).value;
-        const isChecked = document.getElementById(`check`).checked;
-        event.preventDefault();
-        if (isChecked) {
-            window.open(`${url}`, "_blank");
-        } else {
-            window.location.href = `${url}`;
-        }
-    });
-</script>
 </body>
 </html>
