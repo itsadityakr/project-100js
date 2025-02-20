@@ -5,11 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Event Remainder App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="container">
+    <h1>Event Remainder App</h1>
+    <div class="input">
+        <form action="#" onsubmit="return false">
+            <label for="eventInput">Enter Event:</label>
+            <input type="text" id="eventInput">
+            <label for="dtInput">Enter Date:</label>
+            <input type="datetime-local" id="dtInput">
+            <button class="submitBtn">Add Remainder</button>
+        </form>
+    </div>
+    <div class="output">No events found</div>
+</div>
 <script src="./script.js"></script>
 </body>
 </html>
