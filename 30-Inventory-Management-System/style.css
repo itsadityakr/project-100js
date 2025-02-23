@@ -1,0 +1,89 @@
+/* Vintage old-shop style */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+body {
+    font-family: 'IM Fell English SC', serif;
+    background-color: #f5e1c8; /* Aged paper background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Wood texture */
+    border: 10px solid #8b5a2b; /* Dark wood border */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #5b3924; /* Dark brown */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #4a2c15; /* Deep brown */
+}
+
+input {
+    padding: 8px;
+    border: 2px solid #5b3924; /* Darker wood tone */
+    background-color: #fdf5e6; /* Antique paper color */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8b5a2b; /* Wood brown */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5b3924; /* Dark brown */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fdf5e6; /* Aged paper */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #5b3924;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #8b5a2b;
+}
+
+th {
+    background-color: #8b5a2b;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0c9a6;
+}

@@ -1,0 +1,81 @@
+/* School-themed CSS */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Light beige background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #bdc3c7;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d6eaf8;
+}
