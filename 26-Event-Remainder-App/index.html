@@ -12,17 +12,21 @@
 <div class="container">
     <h1>Event Remainder App</h1>
     <div class="input">
-        <form action="#" onsubmit="return false">
-            <label for="eventInput">Enter Event:</label>
-            <input type="text" id="eventInput">
-            <label for="dateInput">Enter Date:</label>
-            <input type="date" id="dateInput">
-            <label for="timeInput">Enter Time:</label>
-            <input type="time" id="timeInput">
-            <button class="submitBtn">Add Remainder</button>
-        </form>
+        <label for="eventName">Enter Event Name:</label>
+        <input type="text" id="eventName" placeholder="Event Name" required>
+        <label for="eventDate">Enter Event Date:</label>
+        <input type="date" id="eventDate" required>
+        <label for="eventTime">Enter Event Time</label>
+        <input type="time" id="eventTime" required>
+        <button id="addEvent">Add Event</button>
     </div>
-    <div class="output">No events found</div>
+    <div class="output">
+
+        <span class="llDiv" style="font-size: 1.3rem; font-weight: bold">Upcoming Events
+            <button id="sort">Sort</button>
+        </span>
+        <ul id="eventList"></ul>
+    </div>
 </div>
 <script src="./script.js"></script>
 </body>

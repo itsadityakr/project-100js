@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+}
+
+#display {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    width: 100px;
+}
+
+#start {
+    background: #4caf50;
+}
+
+#stop {
+    background: #f44336;
+}
+
+#reset {
+    background: #2196f3;
+}
+
+#lap {
+    background: #ff9800;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 100%;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#laps li {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    color: white;
+}
